@@ -45,8 +45,8 @@ export default function Testimonials(){
             <FeaturesHeading title="Testimonials" description="Guests love their stay"/>
             <div className="lg:grid lg:grid-cols-3 gap-6 flex flex-col">
                 <Testimonial testimonial="An exceptional experience from start to finish. The staff went above and beyond to make our stay unforgettable" user="Chiamaka O" location="Port-Harcourt, Nigeria"/>
-                <Testimonial testimonial="An exceptional experience from start to finish. The staff went above and beyond to make our stay unforgettable" user="Chiamaka O" location="Port-Harcourt, Nigeria"/>
-                <Testimonial testimonial="An exceptional experience from start to finish. The staff went above and beyond to make our stay unforgettable" user="Chiamaka O" location="Port-Harcourt, Nigeria"/>
+                <Testimonial testimonial="The perfect blend of luxury and comfort. I can't wait to come back" user="Emmanuel K" location="Port-Harcourt, Nigeria"/>
+                <Testimonial testimonial="Breathtaking views and impeccable service. A truly memorable experience" user="Amanda P" location="Port-Harcourt, Nigeria"/>
             </div>
         </div>
     )
