@@ -24,8 +24,8 @@ function MobileNavBar({showNav}:MobileNavBarProp){
     const navItems = ['Home','About','Rooms','Amenities','Gallery','Testimonials','Contact']
     const editedNavItems = navItems.map((item)=><li><a href={"#"+item.toLowerCase()} className="hover:cursor hover:text-gold-hover">{item}</a></li>)
     return(
-        <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} exit={{opacity:0,x:-50}} className={`${showNav ? 'block':'hidden'} lg:hidden absolute`} transition={{duration:0.5,ease:'easeInOut'}}>
-            <ul className="flex order-1 transform-[translate(-15px,-14px)] backdrop-blur-[3px] p-2.5 flex-col gap-4.75 bg-[#ffffff26] font-inter tracking-[1px] text-gold font-medium">
+        <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} exit={{opacity:0,x:-50}} className={`${showNav ? 'block':'hidden'} lg:hidden md:hidden absolute`} transition={{duration:0.5,ease:'easeInOut'}}>
+            <ul className="flex order-1 transform-[translate(-19px,-16px)] backdrop-blur-[3px] p-2.5 flex-col gap-4.75 bg-[#00000026] font-inter tracking-[1px] text-gold font-medium">
                 {editedNavItems}
             </ul>
         </motion.div>
@@ -37,7 +37,7 @@ function NavBar(){
     const navItems = ['Home','About','Rooms','Amenities','Gallery','Testimonials','Contact']
     const editedNavItems = navItems.map((item)=><li><a href={"#"+item.toLowerCase()} className="hover:cursor hover:text-gold-hover">{item}</a></li>)
     return(
-        <div className="hidden lg:block order-2">
+        <div className="hidden lg:block md:block order-2">
             <ul className="flex  flex-row font-inter gap-9 tracking-[1px] text-subText font-medium">
                 {editedNavItems}
             </ul>
@@ -54,21 +54,21 @@ export function TransparentButton({text}:ButtonProp){
 function Navigation({showNav,setShowNav}:NavigationProp){
     return(
         <div className="relative gap-6 z-50 flex justify-between items-start lg:items-center lg:gap-0 lg:order-1" onClick={(e)=>{e.stopPropagation();setShowNav(false)}}>
-            <p className={"font-cinzel order-2 font-bold text-gold text-3xl " + `${showNav ? 'translate-x-22':''}`}>3D Suites N Lounge</p>
-            <GiHamburgerMenu className={"size-12 lg:hidden text-gold hover:cursor-pointer hover:text-gold-hover " + `${showNav ? 'hidden':'block'}`} onClick={(e)=>{e.stopPropagation();setShowNav(true)}}/>
+            <p className={"font-cinzel order-2 font-bold text-gold lg:text-3xl md:text-3xl -z-1 text-[24px] " + `${showNav ? 'translate-x-24':''}`}>3D Suites N Lounge</p>
+            <GiHamburgerMenu className={"size-8 lg:hidden md:hidden text-gold hover:cursor-pointer hover:text-gold-hover " + `${showNav ? 'hidden':'block'}`} onClick={(e)=>{e.stopPropagation();setShowNav(true)}}/>
             <MobileNavBar showNav={showNav}/>
             <NavBar />
-            <TransparentButton text="Book a stay"/>
+            <button className="uppercase order-3 hidden lg:block md:block w-fit font-inter text-gold border-gold py-1 px-4 font-medium bg-transparent border-2">Book A Stay</button>
         </div>
     )
 }
 
 function HeroText(){
     return(
-        <div className="lg:mt-12 mt-5 gap-2 relative lg:z-50 z-1 w-full lg:w-[50%] flex flex-col lg:gap-6 items-start">
-            <p className="text-gold uppercase font-medium text-[17px] font-inter">A sanctuary of luxury and comfort</p>
-            <p className="font-cinzel text-[4rem] font-medium leading-17 text-mainText">Experience <br /> Timeless elegance</p>
-            <p className="font-inter text-subText font-bold">Discover a refined escape where exceptional service. <br /> breathtaking views, and unmatched comfort come together <br /> for an unforgettable stay</p>
+        <div className="lg:mt-12 mt-5 gap-5 relative lg:z-50 z-1 w-full lg:w-[50%] flex flex-col lg:gap-6 items-start">
+            <p className="text-gold uppercase font-medium text-[16px] lg:text-[17px] md:text-[17px] font-inter">A sanctuary of luxury and comfort</p>
+            <p className="font-cinzel text-[3rem] lg:text-[4rem] md:text-[4rem] font-medium leading-13.25 lg:leading-17 md:leading-17 text-mainText">Experience <br /> Timeless elegance</p>
+            <p className="font-inter text-[15px] lg:text-[16px] md:text-[16px] text-subText font-bold">Discover a refined escape where exceptional service. <br /> breathtaking views, and unmatched comfort come together <br /> for an unforgettable stay</p>
             <div className="bg-gold items-center flex flex-row gap-2 py-1 px-4 text-black uppercase w-fit font-medium tracking-[2px]">
                 <p>Book a stay</p>
                 <FiChevronRight className="size-4"/>
