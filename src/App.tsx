@@ -1,11 +1,10 @@
-import { div } from "motion/react-client";
+
 import HotelHeader from "./Hotel/HotelHeader";
 import AboutUsSection from "./Hotel/AboutUs";
 import { RoomSection } from "./Hotel/RoomSection";
 import AmenitiesSection from "./Hotel/Amenities";
 import GallerySection from "./Hotel/Gallery";
 import Testimonials from "./Hotel/Testimonials";
-import { RiContactsLine } from "react-icons/ri";
 import ContactUs from "./Hotel/ContactUs";
 import Footer from "./Hotel/Footer";
 

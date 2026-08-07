@@ -7,7 +7,6 @@ import DeluxeRoom from "../assets/hotel_images/deluxe_room.png"
 import PremiumRoom from "../assets/hotel_images/premium_room.png"
 import PoolTable from "../assets/hotel_images/pool_game.png"
 import PoolTable2 from "../assets/hotel_images/pool_game_2.png"
-import { img } from "motion/react-client"
 import { easeIn, motion } from "motion/react"
 
 export default function GallerySection(){

@@ -3,7 +3,7 @@ import { easeIn, motion } from "motion/react";
 import StandardRoom from "../assets/hotel_images/first_room.png"
 import DeluxeRoom from "../assets/hotel_images/deluxe_room.png"
 import PremiumRoom from "../assets/hotel_images/premium_room.png"
-import { div } from "motion/react-client";
+
 
 
 interface RoomProp{
