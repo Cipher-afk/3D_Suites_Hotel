@@ -25,7 +25,7 @@ function MobileNavBar({showNav}:MobileNavBarProp){
     const editedNavItems = navItems.map((item)=><li><a href={"#"+item.toLowerCase()} className="hover:cursor hover:text-gold-hover">{item}</a></li>)
     return(
         <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1,x:0}} exit={{opacity:0,x:-50}} className={`${showNav ? 'block':'hidden'} lg:hidden md:hidden absolute`} transition={{duration:0.5,ease:'easeInOut'}}>
-            <ul className="flex order-1 transform-[translate(-19px,-16px)] backdrop-blur-[3px] p-2.5 flex-col gap-4.75 bg-[#00000026] font-inter tracking-[1px] text-gold font-medium">
+            <ul className="flex order-1 transform-[translate(-19px,-16px)] backdrop-blur-[3px] p-2.5 flex-col gap-4.75 bg-[#000000b2] font-inter tracking-[1px] text-gold font-medium">
                 {editedNavItems}
             </ul>
         </motion.div>
