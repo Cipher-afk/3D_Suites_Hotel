@@ -25,6 +25,10 @@
 
 }
 
+html{
+  scroll-behaviour: smooth;
+}
+
 body{
   background-color:var(--color-background);
 }

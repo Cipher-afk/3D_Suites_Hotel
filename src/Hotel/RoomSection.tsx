@@ -49,7 +49,7 @@ function Rooms({image,title,description,price}:RoomProp){
 
 export function RoomSection(){
     return(
-        <div className=" mt-7 border-b border-[#ffffff7e] pb-6">
+        <div className=" mt-7 border-b border-[#ffffff7e] pb-6" id="rooms">
             <FeaturesHeading title="our rooms & suites" description="find your perfect stay"/>
             <div className="lg:grid lg:grid-cols-3 lg:gap-6 flex flex-col gap-7.5">
                 <Rooms image={StandardRoom} title="Standard Room" description="A perfect blend of comfort and style with modern anemities and cozy ambience" price="80,000"/>

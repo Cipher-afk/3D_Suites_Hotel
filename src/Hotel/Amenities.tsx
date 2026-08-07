@@ -23,7 +23,7 @@ function Experiences({icon:Icon,title}:ExperiencesProps){
 
 export default function AmenitiesSection(){
     return(
-        <div className="mt-7">
+        <div className="mt-7" id="amenities">
             <FeaturesHeading title="Amenities" description="Experience more than just a stay"/>
             <div className="lg:grid lg:grid-cols-6 gap-5 mt-5 flex flex-col">
                 <Experiences icon={FaSwimmingPool} title="Infinity Pool"/>

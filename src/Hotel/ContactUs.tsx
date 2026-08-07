@@ -11,7 +11,7 @@ interface ContactProps{
 
 function Contact({icon:Icon,title,value}:ContactProps){
     return(
-        <div className="flex gap-2">
+        <div className="flex gap-2" id="contact">
             <Icon className="text-gold size-7"/>
             <div className="flex flex-col gap-1.5">
                 <p className="text-mainText font-bold">{title}</p>

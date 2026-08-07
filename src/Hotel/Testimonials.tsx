@@ -41,7 +41,7 @@ function Testimonial({testimonial,user,location}:TestimonialProps){
 
 export default function Testimonials(){
     return(
-        <div className="mt-7">
+        <div className="mt-7" id="testimonials">
             <FeaturesHeading title="Testimonials" description="Guests love their stay"/>
             <div className="lg:grid lg:grid-cols-3 gap-6 flex flex-col">
                 <Testimonial testimonial="An exceptional experience from start to finish. The staff went above and beyond to make our stay unforgettable" user="Chiamaka O" location="Port-Harcourt, Nigeria"/>

@@ -15,7 +15,7 @@ interface BenefitsProp{
 
 function AboutUsText(){
     return(
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4" id="about">
             <p className="text-gold uppercase font-medium font-inter">About us</p>
             <p className="text-mainText uppercase font-cinzel text-2xl font-medium">Hospitality that <br /> feels like home</p>
             <p className="font-bold text-subText">At Grand Solace, we blend modern luxury with heartfelt <br /> hospitality. Every detail is thoughtfully curated to ensure <br /> you relax, recharge and create lasting memories</p>
